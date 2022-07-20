@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"
+    ><title>FrontHenry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ac94c6d1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>FrontHenry</h2>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/FrontHenry">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://mailto:">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="">Me liga</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class= "container">
+            <div class="name">
+                <h1>Henry Victor</h1>
+                <h5>Hiring Coders #3</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="display: none" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum ex vel quos quasi voluptates et molestias facilis corrupti dolore!</p>            
+            </div>
+            <div class="form">
+                <div id="contato">
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
